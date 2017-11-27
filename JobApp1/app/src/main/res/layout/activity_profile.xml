@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lenovo.jobapp1.ProfileActivity"
+    android:background="@mipmap/image">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:textColor="#FFFFFF"
+        android:textSize="14dp"/>
+    <EditText
+        android:id="@+id/eName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Full Name"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/txtEmail"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="@color/colorAccent"/>
+    <EditText
+        android:id="@+id/eBio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Bio"
+        android:inputType="textLongMessage"
+        android:layout_below="@+id/eName"
+        android:layout_alignLeft="@+id/eName"
+        android:layout_alignStart="@+id/eName"
+        android:layout_marginTop="20dp"
+        android:textColorHint="@color/colorAccent"/>
+    <EditText
+        android:id="@+id/eTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Title"
+        android:inputType="text"
+        android:layout_below="@+id/eBio"
+        android:layout_alignLeft="@+id/eBio"
+        android:layout_alignStart="@+id/eBio"
+        android:textColorHint="@color/colorAccent"/>
+    <EditText
+        android:id="@+id/eLan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Languages"
+        android:inputType="text"
+        android:layout_below="@+id/eTitle"
+        android:layout_alignLeft="@+id/eTitle"
+        android:layout_alignStart="@+id/eTitle"
+        android:textColorHint="@color/colorAccent"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnLogout"
+        android:text="Logout"
+        android:layout_below="@+id/eLan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Profile"
+        android:layout_below="@+id/btnLogout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+    <Button
+        android:id="@+id/btnPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add new profile picture"
+        android:layout_below="@+id/btnSave"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+</RelativeLayout>

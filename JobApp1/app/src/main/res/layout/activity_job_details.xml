@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lenovo.jobapp1.JobDetailsActivity"
+    android:background="@mipmap/image">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtDetails"
+        android:text="Job Details"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_marginTop="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/textViewtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDetails"
+        android:text="Title : "
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        android:textColor="#FFFF00"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tTitle"
+        android:layout_below="@id/textViewtitle"
+        android:layout_marginLeft="20dp"
+        android:textSize="16dp"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textViewcompany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Company : "
+        android:layout_below="@id/tTitle"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        android:textColor="#FFFF00"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textCompanyname"
+        android:layout_below="@id/textViewcompany"
+        android:layout_marginLeft="20dp"
+        android:textSize="16dp"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textViewaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textCompanyname"
+        android:layout_marginTop="20dp"
+        android:text="Address : "
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        android:textColor="#FFFF00"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textAbout"
+        android:layout_below="@id/textViewaddress"
+        android:layout_marginLeft="20dp"
+        android:textSize="16dp"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textViewabout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About : "
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/textAbout"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        android:textColor="#FFFF00"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textAddress"
+        android:layout_below="@+id/textViewabout"
+        android:layout_marginLeft="20dp"
+        android:textSize="16dp"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apply"
+        android:id="@+id/btnApply"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/textAddress"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textApps"
+        android:layout_below="@+id/btnApply"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+</RelativeLayout>

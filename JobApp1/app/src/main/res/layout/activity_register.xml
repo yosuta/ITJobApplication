@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lenovo.jobapp1.RegisterActivity"
+    android:background="@mipmap/image">
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editEmail"
+        android:layout_marginTop="70dp"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+       android:layout_centerHorizontal="true"
+        android:textColorHint="#FFFF00"
+        android:textColor="#FFFF00"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editName"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/editEmail"
+        android:textColorHint="#FFFF00"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFF00"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editPassword"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/editName"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="#FFFF00"
+        android:textColor="#FFFF00"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnRegister"
+        android:text="Register"
+        android:layout_below="@+id/editPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtSignin"
+        android:text="or sign in"
+        android:textStyle="bold"
+        android:layout_below="@+id/btnRegister"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/txtEnterprise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editEmail"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/editEmail"
+        android:layout_marginTop="23dp"
+        android:text="Enterprise"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>
